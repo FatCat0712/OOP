@@ -1,0 +1,9 @@
+Lớp và đối tượng
+_ Lớp đối tượng (class) là khuôn mẫu để sinh ra đối tượng
+
+_ Đối tượng là thể hiện (instance) của một lớp.
+
+Đối tượng có
+_ định danh
+_ thuộc tính (dữ liệu)
+_ hành vi (phương thức)
