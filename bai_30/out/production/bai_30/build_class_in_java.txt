@@ -1,0 +1,101 @@
+Xây dựng lớp
+
+_ Khi định nghĩa lớp ta cần định nghĩa:
+
++ Các thuộc tính (biến)
++ Các hành vi (hàm)
+
+Ví dụ
+
+Lớp: con người
+Thuộc tính: hoTen, ngaySinh, diaChi, ...
+Hành vi: An, nghiNgoi, caHat, tapTheduc, ...
+
+* Định nghĩa đầy đủ của 1 lớp
+
+[public] : Lớp được truy xuất chung cho các Package khác, mặc định chỉ có các đoạn mã trong cùng một gói mới có quyền truy xuất nó
+
+[abstract]: lớp trừu tượng , không thể khởi tạo
+
+[final]: lớp hằng không có lớp con, không kế thừa
+
+class ClassName : tên lớp
+
+[extends SuperClass] : kế thừa từ lớp cha SuperClass
+
+[implements Interfaces] : Giao diện được vài đặt bởi Class
+
+{ //Member Variables Declarations : Khai báo các biến
+  
+  //Methods Declarations	: khai báo các phương thức
+}		
+
+
+* Khai báo
+
+Cú pháp:
+
+Type name;
+
+_ Khai báo 1 biến tên name dùng để tham chiếu tới dữ liệu có kiểu là type
+
+_ Type có thể có hai dạng:
+
++ Primitive types
++ Reference types
+
+_ Với kiểu khai báo này giá trị của name hoặc là giá trị mặc định do Java khởi gán hoặc là NULL
+
+Ví dụ
+
++ MyClass myObj = new MyClass(); or MyClass myObj
+
++ MyParent myObj = new MyClass(); or MyParent myObj;
+
++ MyInterface myObj - new MyClass (); or MyInterface myObj
+
+Note: MyParent và MyInterface phải là super class của MyClass
+
+* Khởi tạo đối tượng
+
++ Constructor trong Java là một phương thức đặc biệt được sử dụng để khởi tạo đối tượng của một lớp. Nó có chức năng tạo ra một đối tượng mới của lớp đó và khởi tạo các thuộc tính của đối tượng đó. Constructor được gọi tự động khi một đối tượng mới được tạo bằng từ khóa "new"
+
++ Ngoài ra, constructor trong Java được sử dụng để khởi tạo các thuộc tính của các đối tượng và các giá trị khác cần thiết cho đối tượng. Nó cũng được sử dụng để thiết lập các giá trị mặc định cho các thuộc tính của đối tượng
+
++ Constructor có tên trùng với tên của lớp mà nó định nghĩa và chúng không được định nghĩa một kiểu giá trị trả về.
+
++ Constructor có thể nhận vào nhiều tham số hoặc không
+
++ Constructor mặc định được Java khởi tạo
+
+Ví dụ
+
+public class Point{
+	public int x = 0;
+	public int y = 0;
+
+	pulic Point(int x, int y){
+		this.x = x;
+		this.y = y;
+	}
+	public static void main(String[] args){
+		Point originOne = new Point(23,94);
+	}
+
+* Sử dụng đối tượng
+
+_ Có thể sử dụng đối tượng theo 2 cách
+
++ Tham chiếu tới các thuộc tính nếu (nếu là các thuộc tính public)
+
+	objectReference.variableName;
+
+Ví dụ: System.out.println("Chieu cao cua rectOne:" + rectOne.height);
+
++ Triệu gọi các phương thức
+
+	objectReference.methodName(argumentList);
+
+Ví dụ:  System.out.println("Chieu cao cua rectOne:" + rectOne.area());
+
++ Ngoài constructor thì các phương thức khác thuộc lớp đều phải có kiểu trả về

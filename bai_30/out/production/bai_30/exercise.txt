@@ -1,0 +1,9 @@
+Tạo ra một class: MyDate
+Trong Date có các dữ liệu: day, month, year
+Trong Date có các phương thức: 
+
++ in ra ngày tiếp theo
++ in ra ngày
++ in ra tháng
++ in ra năm
++ in ngày - tháng - năm
