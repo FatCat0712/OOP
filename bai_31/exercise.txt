@@ -1,0 +1,17 @@
+Phát triển một chương trình tính toán chi phí bán cà phê số lượng lớn tại một cửa hàng. Thông tin của một hóa đơn gồm tên loại cà phê, giá tiền trên 1 kg và khối lượng của túi cà phê.
+
+Cần tính tổng tiền của hóa đơn: dựa trên khối lượng nhân cho giá tiền trên 1kg
+
++ Ví dụ 
+1.5kg cà phê Trung Nguyên, có giá tiền là 100000đ => Số tiền của hóa đơn là 150000đ
+2kg cà phê Vina, có giá 120000kg => số tiền của hóa đơn là 240000đ
+
++ Bổ sung phương thức
+_ Kiểm tra khối lượng cà phê của túi đã bán có lớn hơn một con số được đưa vào phương thức hay không ?
+
+_ Kiểm tra giá tiền của hóa đơn có lớn hơn 500000đ hay không
+
+_ Tính số tiền giảm giá, giảm x% cho các hóa đơn có giá trị lớn hơn 500000đ.
+
+_ Tính số tiền khách phải trả sau khi đã giảm giá.
+
