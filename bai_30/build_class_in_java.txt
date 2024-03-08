@@ -58,9 +58,12 @@ Note: MyParent và MyInterface phải là super class của MyClass
 
 * Khởi tạo đối tượng
 
-+ Constructor trong Java là một phương thức đặc biệt được sử dụng để khởi tạo đối tượng của một lớp. Nó có chức năng tạo ra một đối tượng mới của lớp đó và khởi tạo các thuộc tính của đối tượng đó. Constructor được gọi tự động khi một đối tượng mới được tạo bằng từ khóa "new"
++ Constructor trong Java là một phương thức đặc biệt được sử dụng để khởi tạo đối tượng của một lớp. 
+Nó có chức năng tạo ra một đối tượng mới của lớp đó và khởi tạo các thuộc tính của đối tượng đó. 
+Constructor được gọi tự động khi một đối tượng mới được tạo bằng từ khóa "new"
 
-+ Ngoài ra, constructor trong Java được sử dụng để khởi tạo các thuộc tính của các đối tượng và các giá trị khác cần thiết cho đối tượng. Nó cũng được sử dụng để thiết lập các giá trị mặc định cho các thuộc tính của đối tượng
++ Ngoài ra, constructor trong Java được sử dụng để khởi tạo các thuộc tính của các đối tượng và các giá trị khác cần thiết cho đối tượng.
+Nó cũng được sử dụng để thiết lập các giá trị mặc định cho các thuộc tính của đối tượng
 
 + Constructor có tên trùng với tên của lớp mà nó định nghĩa và chúng không được định nghĩa một kiểu giá trị trả về.
 
