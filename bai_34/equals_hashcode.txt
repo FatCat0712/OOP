@@ -1,0 +1,52 @@
+* equals
+
+Khi so sánh hai đối tượng với nhau, Java gọi phương thức equals() của chúng trả về true nếu hai đối tượng bằng nhay hoặc false nếu hai đối tượng là khác nhau.
+
+equals và == là khác nhau
+
+Lý do
+
++ Phương thức equals() được thiết kế để so sánh hai đối tượng về mặt ngữ nghĩa (bằng cách so sánh các thành viên dữ liệu của lớp.
+
++ toán tử == so sánh hai đối tượng về mặt kỹ thuật ( bằng cách so sánh các tham chiếu của chúng, nghĩa là địa chỉ bộ nhớ).
+
+* Hai đối tượng khác nhau được lưu trữ ở các vị trí khác nhau trong bộ nhớ Heap
+
++ Nên ghi đè phương thức equals() trong các lớp của bạn để so sánh về ngữ nghĩa giữa 2 đối tượng
+
++ tất cả các lớp đối tượng đều kế thừa từ lớp cha là lớp Object
++ Lớp Object có 11 phương thức
+
+
+* Hashcode
++ Mã băm được sử dụng trong các collection dựa trên bảng băm như Hashtable, HashSet và HashMap để lưu trữ các đối tượng trong các container nhỏ được gọi là "nhóm".
+
++ Mỗi nhóm được liên kết với mã băm và mỗi nhóm chỉ chứa các đối tượng có mã băm giống hệt nhau.
+
+-> Một bảng băm nhóm các phần tử bằng các giá trị mã băm của chúng. Sự sắp xếp này giúp cho bảng băm định vị một phần tử một cách nhanh chóng và hiệu quả
+
+_ Các bước để định vị một phần tử trong một bảng băm:
+
++ Nhận giá trị mã băm của phần tử được chỉ định bằng cách gọi phương thức hashCode()
+
++ Tìm nhóm thích hợp thích hợp được liên kết với mã băm đó
+
++ Bên trong nhóm, tìm phần tử chính xác bằng cách so sánh phần tử được chỉ định với các phần tử trong nhóm. Bằng phương thức equals() của phần tử đã chỉ định được gọi.
+
+* Quy tắc cho phương thức equals() và hashCode() trong Java
+
++ Khi phương thức equals() được ghi đè, phương thức hashCode() cũng phải được ghi đè.
+
++ Nếu hai đối tượng bằng nhau, mã băm của chúng phải bằng nhau
+
++ Nếu hai đối tượng không bằng nhau, không có ràng buộc về mã băm của chúng ( mã băm của chúng có thể bằng nhau hay không).
+
++ Nếu hai đối tượng có mã băm giống nhau, thì không có ràng buộc nào về sự bình nhau của chúng ( chúng có thể bằng nhau hay không)
+
++ Nếu hai đối tượng có mã nhau khác nhau, chúng không được bằng nhau
+
+
+
+
+
+
