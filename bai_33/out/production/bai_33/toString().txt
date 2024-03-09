@@ -1,0 +1,5 @@
+toString()
+
+_ là phương thức được sử dụng để chuyển đổi một object thành một string(chuỗi) rồi trả về nó. Phương thức toString() thuộc class Object trong Java và có thể sử dụng nó mà không cần import thư viện nào cả.
+
+_ Nếu bạn in bất kỳ đối tượng nào, trình biên dịch Java sẽ gọi phương thức toString() trên đối tượng. Vì vậy, ghi đè phương thức toString(), trả về kết quả đầu ra mong muốn.
