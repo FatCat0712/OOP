@@ -1,0 +1,9 @@
+Xây dựng chương trình Java hỗ trợ quản lý thông tin Sinh viên. Sinh viên bao gồm mã số sinh viên, họ và tên, ngày tháng năm sinh, điểm trung bình, lớp. Ngày sinh bao gồm ngày, tháng, năm. Lớp bao gồm tên lớp và tên khoa.
+
+Xây dựng lớp và hiện thực các phương thức sau:
+
++ Cho biết tên khoa mà sinh viên đang theo học.
+
++ Cho biết học sinh có đậu hay không ( điểm trung bình >= 5.0)
+
++ Kiểm tra sinh viên có ngày sinh giống với ngày sinh của một sinh viên khác hay không
