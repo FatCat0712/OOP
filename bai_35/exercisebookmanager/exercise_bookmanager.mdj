@@ -1890,7 +1890,7 @@
 									"hostEdge": {
 										"$ref": "AAAAAAGOJlLBUFQ7y2g="
 									},
-									"text": "+1"
+									"text": "+*"
 								},
 								{
 									"_type": "EdgeLabelView",
@@ -2068,7 +2068,8 @@
 								"$ref": "AAAAAAGOJhmdXBXWmb4="
 							},
 							"name": "boolean state",
-							"visibility": "private"
+							"visibility": "private",
+							"type": ""
 						},
 						{
 							"_type": "UMLAttribute",
@@ -2096,7 +2097,8 @@
 								"$ref": "AAAAAAGOJhqbaBYOaHk="
 							},
 							"name": "int day",
-							"visibility": "private"
+							"visibility": "private",
+							"type": ""
 						},
 						{
 							"_type": "UMLAttribute",
@@ -2105,7 +2107,8 @@
 								"$ref": "AAAAAAGOJhqbaBYOaHk="
 							},
 							"name": "int month",
-							"visibility": "private"
+							"visibility": "private",
+							"type": ""
 						},
 						{
 							"_type": "UMLAttribute",
@@ -2114,7 +2117,8 @@
 								"$ref": "AAAAAAGOJhqbaBYOaHk="
 							},
 							"name": "int year",
-							"visibility": "private"
+							"visibility": "private",
+							"type": ""
 						}
 					]
 				},
@@ -2237,7 +2241,8 @@
 								"$ref": "AAAAAAGOJiFX6R7nSdk="
 							},
 							"name": "double tax",
-							"visibility": "private"
+							"visibility": "private",
+							"type": ""
 						}
 					]
 				},
@@ -2271,7 +2276,7 @@
 								"_parent": {
 									"$ref": "AAAAAAGOJlLBT1Q3AqA="
 								},
-								"name": "1",
+								"name": "*",
 								"reference": {
 									"$ref": "AAAAAAGOJkYPtz2yCCk="
 								},
@@ -2287,7 +2292,8 @@
 								"$ref": "AAAAAAGOJju+ZzWJJl8="
 							},
 							"name": "Book ArrayList lst",
-							"visibility": "private"
+							"visibility": "private",
+							"type": ""
 						}
 					],
 					"operations": [
@@ -2343,7 +2349,8 @@
 									"_parent": {
 										"$ref": "AAAAAAGOJk0k0EnYBMo="
 									},
-									"name": "Book b"
+									"name": "Book b",
+									"type": ""
 								}
 							]
 						},
@@ -2385,7 +2392,8 @@
 									"_parent": {
 										"$ref": "AAAAAAGOJk+fJUu9/Rs="
 									},
-									"name": "String publisher"
+									"name": "String publisher",
+									"type": ""
 								}
 							]
 						}
@@ -2465,7 +2473,8 @@
 								"$ref": "AAAAAAGOJkYPtz2yCCk="
 							},
 							"name": "String bookCode",
-							"visibility": "private"
+							"visibility": "private",
+							"type": ""
 						},
 						{
 							"_type": "UMLAttribute",
@@ -2474,7 +2483,8 @@
 								"$ref": "AAAAAAGOJkYPtz2yCCk="
 							},
 							"name": "MyDate importDate",
-							"visibility": "private"
+							"visibility": "private",
+							"type": ""
 						},
 						{
 							"_type": "UMLAttribute",
@@ -2483,7 +2493,8 @@
 								"$ref": "AAAAAAGOJkYPtz2yCCk="
 							},
 							"name": "double unitPrice",
-							"visibility": "private"
+							"visibility": "private",
+							"type": ""
 						},
 						{
 							"_type": "UMLAttribute",
@@ -2492,7 +2503,8 @@
 								"$ref": "AAAAAAGOJkYPtz2yCCk="
 							},
 							"name": "int numberOfBooks",
-							"visibility": "private"
+							"visibility": "private",
+							"type": ""
 						},
 						{
 							"_type": "UMLAttribute",
@@ -2501,7 +2513,8 @@
 								"$ref": "AAAAAAGOJkYPtz2yCCk="
 							},
 							"name": "String publisher",
-							"visibility": "private"
+							"visibility": "private",
+							"type": ""
 						},
 						{
 							"_type": "UMLAttribute",
@@ -2509,7 +2522,8 @@
 							"_parent": {
 								"$ref": "AAAAAAGOJkYPtz2yCCk="
 							},
-							"name": "String type"
+							"name": "String type",
+							"type": ""
 						}
 					],
 					"operations": [
