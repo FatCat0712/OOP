@@ -1,0 +1,44 @@
+Java không hỗ trợ đa kế thừa
+
+Để có thể hỗ trợ tính năng đa kế thừa dùng interface
+
+
+Ví dụ
+
+Cho lớp ConNguoi
+
+#String fullName
+#int namSinh
+
++ void an()
++ void ngu()
+
+Tạo ra lớp con NguoiVietNam, NguoiMy, NguoiBaLan kế thừa lớp ConNguoi
+
+Ở lop NguoiVietNam
+
+void xinChao(){
+	System.out.println("Xin chào");
+}
+
+Ở lớp NguoiMy
+
+void xinChao(){
+	System.out.println("Hello");
+}
+
+Ở lớp nguoiBaLan
+
+void xinChao(){
+	System.out.println("Czess");
+}
+
+Tạo một lớp học sinh kết thừa từ 3 lớp trên
+=> trường hợp một học sinh có thể nói được 3 thứ tiếng
+=> lỗi
+=> vì khi kế thừa phương thức xinChao từ ba lớp trên Java sẽ không hiểu nên chọn phương thức xinChao từ lớp nào để kế thừa
+=> Diamond problem
+
+-> Để giải quyết vấn đề trên dùng interface
+-> Hỗ trợ khả năng thay đổi hành vi ở runtime.
+
