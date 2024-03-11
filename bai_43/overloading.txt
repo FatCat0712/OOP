@@ -1,0 +1,33 @@
+overloading (Nạp chồng phương thức)
+
++ Là việc tạo ra nhiều phương thức trong một lớp có chung tên những khác tham số truyền vào
+
+* Lý do: tăng tính sử dụng cho các phương thức bên trong một lớp.
+
+So sánh Overloading và Overriding
+
+Overloading				Overriding
+
+Nạp chồng phương thức được		Ghi đè phương thức được sử dụng để cung cấp
+sử dụng để giúp code của chương		cài đặt cụ thể cho phương thức được khai báo 
+trình dễ đọc hơn.			ở lớp cha.
+	
+Nạp chồng được thực hiện bên		Ghi đè phương thức xảy ra trong 2 class có 
+trong một class.			quan hệ kế thừa.
+
+Nạp chồng phương thức thì		Ghi đè phương thức thì tham số phải giống
+tham số phải khác nhau.			nhau
+
+Nạp chồng phương thức là ví dụ về	Ghi đè phương thức là ví dụ về đa hình lúc
+đa hình lúc biên dịch			runtime.
+
+Trong Java, nạp chồng phương thức	Kiểu giá trị trả về phải giống nhau.
+không thể được thực hiện khi chỉ
+thay đổi kiểu giá trị trả về của
+phương thức. Kiểu giá trị trả về có
+thể giống hoặc khác. Giá trị trả về
+có thể giống hoặc khác, nhưng tham
+số phải khác nhau.
+
+
+

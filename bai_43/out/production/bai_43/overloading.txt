@@ -1,0 +1,6 @@
+overloading (Nạp chồng phương thức)
+
++ Là việc tạo ra nhiều phương thức trong một lớp có chung tên những khác tham số truyền vào
+
+* Lý do: tăng tính sử dụng cho các phương thức bên trong một lớp.
+
