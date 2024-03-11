@@ -1,0 +1,25 @@
+Tính trừu tượng là gì:
+
++ là một tiến trình ẩn các chi tiết trình triển khai và chỉ hiển thị tính năng tới người dùng.
+
++ Lớp trừu tượng không thể được dùng để tạo ra các đối tượng như những lớp bình thường khác.
+
+
++ Một lớp không muốn hiện thực cụ thể, mà chỉ là khai báo những khái niệm chung chung.
+
+
+Lớp trừu tượng - abstract trong Java
+
+Một lớp được khai báo với từ khóa abstract thì đó là lớp trừu tượng. Nó cần được kế thừa và phương thức của nó được triển khai. 
+Nó không thể được khởi tạo.
+
+Phương thức trừu tượng - abstract trong Java
+
+Một phương thức được khai báo là abstract và không có trình triển khai cụ thể thì đó là phương thức trừu tượng. 
+Phương thức sẽ được triển khai trong các lớp con.
+
+public abstract class LopTruuTuong{
+	public abstract void phuongThucTruuTuong();
+}
+
+
