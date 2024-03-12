@@ -1,0 +1,74 @@
+Package là gì ?
+
++ Một gói thư viện là tập hợp các lớp, các giao tiếp, các kiểu liệt kê và các chú thích.
+
++ Nó cung câp các chức năng bảo vệ truy cập và quản lý không gian tên. 
+
++ Thao tác trên gói có 2 kỹ thuật:
+. Kĩ thuật đặt tên
+. Kĩ thuật điều khiển truy xuất.
+
++ Một gói một nhóm các lớp và giao tiếp có quan hệ với nhau được tổ chức như 1 đơn vị trong không gian tên.
+
++ Gói giúp phân hoạch không gian tên lớp, giao diện thành những vùng dễ quản lý hơn.
+
++ Ở những gói khác nhau có thể có lớp những lớp có tên giống nhau
+
+* Đặc điểm gói
+
++ Một gói có thể nhiều gói con
+
++ Không được có 2 thành viên trùng tên
+
++ Tên của gói được viết bằng chữ thường
+
+* Java có 2 loại gói:
+
++ Gói định nghĩa trước
+
++ Gói được định nghĩa bởi người dùng
+
+* Định nghĩa gói
+
++ Để tạo 1 gói, ta đặt từ khóa package ngay phát biểu đầu tiên của tập nguồn.
+
++ Nếu bỏ qua khai báo package -> lớp sẽ được đặt vào gói mặc định.
+
+Ví dụ: package packagename;
+
+* Các bước định nghĩa gói:
+
+Bước 1: lựa chọn tên gói
+ 
+_ Tên gói phải là chữ thường
+
+_ Tên gói không được bắt đầu java hoặc javax
+
+_ Không được bắt đầu bằng số hoặc dấu nối (-)
+
+Bước 2: tạo thư mục cùng tên với gói
+
+_ Java sử dụng hệ thống thư mục để lưu trữ các gói -> các lớp được chứa trong
+thư mục cùng tên PackageName
+
+Bước 3: đưa các tập tin nguồn vào trong gói
+
+_ Thêm câu lệnh package vào dòng đầu tiên của mã nguồn.
+
+_ Chỉ có duy nhất 1 câu lệnh package đối với mỗi tệp nguồn.
+
+Bước 4: biên dịch và chạy ứng dụng
+
+_ Khi biên dịch phải đảm bảo sử dụng tên lớp đầy đủ bao gồm cả tên gói.
+
+_ Dùng dấu chấm để phân biệt một package với package cha của nó.
+
+* Java xem gốc của cây phân cấp gọi được định nghĩa ở biến môi trường CLASSPATH
+
+package packagename1 [.packagename2] [.packagename3]];
+
+Ví dụ:
+
+package java.awt.image;
+
+-> Được lưu trữ trong thư mục Java/awt/image với hệ điều hành Windows
