@@ -1,0 +1,12 @@
+a) Tạo ra interface có tên là MayTinhBoTuiInterface, có các phương thức mặc định, cộng trừ, nhân, chia hai số thực.
+
+Xây dựng các lớp hiện thực hóa Interface bên trên có tên là: MayTinhCasioFX500 và
+MayTinhVinaCal500MS
+
+b) Tạo ra Interface có tên là SapXepInterface, có các phương thức sắp xếp tăng và sắp xếp giảm một số nguyên.
+
+Xây dựng các lớp hiện thực hóa Interface bên trên có tên là: SapXepChen và SapXepChon
+
+c) Xây dựng lớp hiện thực cả hai Interface ở câu a và b có tên là PhanMemMayTinhBoTui
+
+

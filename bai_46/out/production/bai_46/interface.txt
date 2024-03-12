@@ -1,0 +1,22 @@
+Interface là gì ?
+
++ Một interface trong Java là một bản thiết kế của một lớp.
+
++ Nó chỉ có các phương thức trừu tượng và các hằng số.
+
++ Tất cả các hằng số được mặc định là ở dạng public static final.
+
++ Tất cả các phương thức ở dạng public.
+
++ Tương tự như lớp abstract, nó không thể được khởi tạo thành đối tượng
+
+* Mục đích:
+
+Để thu được tính trừu tượng hoàn toàn và đa kế thừa trong Java.
+
+* Lưu ý khi sử dụng:
+
++ Một lớp có thể triển khai một hoặc nhiều interface tại một thời điểm.
+
++ Một interface có thể kế thừa từ một hoặc interface khác, tương tự cách
+một lớp có thể kế thừa lớp khác.
