@@ -1,7 +1,8 @@
+import java.io.Serializable;
 import java.text.NumberFormat;
 import java.util.Locale;
 
-public class Account {
+public class Account implements Serializable {
     private final double interestRate = 0.035;
     private final double withdrawingFee = 10000;
     private long accountNumber;
@@ -69,6 +70,10 @@ public class Account {
 
     public void transfer(double money){
         figure = figure - money;
+
+    }
+
+    public void save(){
 
     }
 

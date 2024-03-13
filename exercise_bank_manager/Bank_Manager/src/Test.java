@@ -1,10 +1,12 @@
+import java.io.*;
+import java.util.ArrayList;
 import java.util.Scanner;
 
-public class Test {
+public class Test{
     public static void main(String[] args) {
         boolean flag = true;
-        int choice = 0;
-        Account[] accountList = null;
+        int choice;
+        ArrayList<Account> accountList = new ArrayList<>();
         int number = 0;
         while (flag){
             System.out.println("-- Bank Manager --");
@@ -15,35 +17,39 @@ public class Test {
             System.out.println("4. Withdraw");
             System.out.println("5. Maturity");
             System.out.println("6. Transfer");
-            System.out.println("7. Exit");
+            System.out.println("7. Save account list as file");
+            System.out.println("8. Read account list from a file");
+            System.out.println("9. Exit");
+            System.out.println("-------------------");
             Scanner sc = new Scanner(System.in);
             choice = sc.nextInt();
             switch (choice){
                 case 1:
                     System.out.println("How many accounts do want add ?");
                     number = sc.nextInt();
-                    accountList = new Account[number];
                     for(int i = 0; i < number; i++){
-                        System.out.println("Enter account number for account "+(i+1));
-                        long accountNumber = sc.nextLong();
-                        sc.nextLine();
-                        System.out.println("Enter account name for account "+(i+1));
-                        String accountName = sc.nextLine();
-                        accountList[i] = new Account(accountNumber,accountName);
+                            System.out.println("Enter account number for account "+accountList.size());
+                            long accountNumber = sc.nextLong();
+                            sc.nextLine();
+                            System.out.println("Enter account name for account "+accountList.size());
+                            String accountName = sc.nextLine();
+                            accountList.add(new Account(accountNumber,accountName));
                     }
+
+
                     break;
                 case 2:
-                    for(int i = 0; i < number; i++){
-                        System.out.println(accountList[i].toString());
+                    for(Account acc : accountList){
+                        System.out.println(acc.toString());
                     }
                     break;
                 case 3:
                     System.out.println("Choose the account you want to deposit: ");
                     long choose = sc.nextLong();
                     long found = 0;
-                    for(int i = 0; i < number; i++){
-                        if(choose == accountList[i].getAccountNumber()){
-                            found = accountList[i].getAccountNumber();
+                    for(Account acc1 : accountList){
+                        if(choose == acc1.getAccountNumber()){
+                            found = acc1.getAccountNumber();
                             break;
                         }
                     }
@@ -54,9 +60,9 @@ public class Test {
                         System.out.println("Try again !");
                         money = sc.nextDouble();
                     }
-                    for(int i = 0; i < number; i++){
-                        if(found == accountList[i].getAccountNumber()){
-                            accountList[i].deposit(money);
+                    for(Account acc2 : accountList){
+                        if(found == acc2.getAccountNumber()){
+                            acc2.deposit(money);
                             break;
                         }
                     }
@@ -64,16 +70,16 @@ public class Test {
                 case 4:
                     System.out.println("Choose the account to withdraw: ");
                     long c = sc.nextLong();
-                    for(int i = 0; i < number; i++){
-                        if(c == accountList[i].getAccountNumber()){
+                    for(Account acc3 : accountList){
+                        if(c == acc3.getAccountNumber()){
                             System.out.println("Enter the amount you want to withdraw");
                             double m = sc.nextDouble();
-                            while(m > accountList[i].getFigure()){
+                            while(m > acc3.getFigure()){
                                 System.out.println("Cannot withdraw");
                                 System.out.println("Try again");
                                 m = sc.nextDouble();
                             }
-                            accountList[i].withdraw(m);
+                            acc3.withdraw(m);
                             break;
                         }
                     }
@@ -81,9 +87,9 @@ public class Test {
                 case 5:
                     System.out.println("Choose the account to maturing: ");
                     long a = sc.nextLong();
-                    for(int i = 0; i < number; i++){
-                        if(a == accountList[i].getAccountNumber()){
-                            accountList[i].maturing();
+                    for(Account acc4: accountList){
+                        if(a == acc4.getAccountNumber()){
+                            acc4.maturing();
                             break;
                         }
                     }
@@ -95,18 +101,55 @@ public class Test {
                     double amount = sc.nextDouble();
                     System.out.println("Receiver: ");
                     long re = sc.nextLong();
-                    for(int i = 0; i < number; i++){
-                        if(acc == accountList[i].getAccountNumber()){
-                            while (amount > accountList[i].getFigure() || accountList[i].getFigure() <= 0){
+                    for(Account acc5 : accountList){
+                        if(acc == acc5.getAccountNumber()){
+                            while (amount > acc5.getFigure() || acc5.getFigure() <= 0){
                                 System.out.println("Cannot transfer");
                                 System.out.println("Try again");
                                 amount = sc.nextDouble();
                             }
-                            accountList[i].transfer(amount);
+                            acc5.transfer(amount);
                         }
-                        else if(re == accountList[i].getAccountNumber()){
-                            accountList[i].deposit(amount);
+                        else if(re == acc5.getAccountNumber()){
+                            acc5.deposit(amount);
                         }
+                    }
+                    break;
+                case 7:
+                    System.out.println("Enter file name: ");
+                    Scanner sc1 = new Scanner(System.in);
+                    String fileName = sc1.nextLine();
+                    try {
+                        File f = new File("E:\\"+fileName);
+                        OutputStream os = new FileOutputStream(f);
+                        ObjectOutputStream oos = new ObjectOutputStream(os);
+
+                        for(Account acc6 : accountList){
+                            oos.writeObject(acc6);
+                        }
+                        oos.flush();
+                        oos.close();
+                    }
+                    catch (Exception e){
+                        e.printStackTrace();
+                    }
+                    break;
+                case 8:
+                    System.out.println("Enter file name: ");
+                    Scanner sc2 = new Scanner(System.in);
+                    String fileToRead = sc2.nextLine();
+                    try {
+                        File f = new File("E:\\"+fileToRead);
+                        InputStream is = new FileInputStream(f);
+                        ObjectInputStream ois = new ObjectInputStream(is);
+
+                        while (is.available() > 0){
+                            Account accountRead = (Account) ois.readObject();
+                            System.out.println(accountRead);
+                        }
+                    }
+                    catch (Exception e){
+                        e.printStackTrace();
                     }
                     break;
                 default:
