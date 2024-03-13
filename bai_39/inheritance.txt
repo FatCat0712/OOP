@@ -2,7 +2,9 @@ _ Kế thừa trong Java
 
 + là một cơ chế trong đó một đối tượng con có được các thuộc tính và hành vi của một đối tượng cha. Nó là một phần quan trọng của OOPs.
 
-+ Ý tưởng: bạn có thể tạo các lớp mới được xây dựng dựa trên các lớp hiện có. Khi bạn kế thừa từ một lớp hiện có, bạn có thể sử dụng lại các phương thức và trường của lớp cha. Bạn cũng có thể thêm các phương thức và trường mới trong lớp hiện tại của mình.
++ Ý tưởng: bạn có thể tạo các lớp mới được xây dựng dựa trên các lớp hiện có. 
+Khi bạn kế thừa từ một lớp hiện có, bạn có thể sử dụng lại các phương thức và trường của lớp cha. 
+Bạn cũng có thể thêm các phương thức và trường mới trong lớp hiện tại của mình.
 
 + Giúp tiết kiệm được nhiều thời gian xây dựng lớp
 
